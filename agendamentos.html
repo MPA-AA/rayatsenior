@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Starter Page - Impact Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom CSS for Booking Box Layout -->
+  <style>
+    /* Center the booking form inside a box with a maximum width */
+    .booking-box {
+      max-width: 600px; 
+      margin: 40px auto; 
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+
+</head>
+
+<body class="starter-page-page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center">
+            <a href="mailto:rayatresidencial@gmail.com">rayatresidencial@gmail.com</a>
+          </i>
+          <i class="bi bi-whatsapp d-flex align-items-center ms-4">
+            <a href="https://wa.me/5511953641740?text=Gostaria+de+informa%C3%A7%C3%B5es+sobre+Rayat+Residencial+S%C3%AAnior."
+               target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://www.facebook.com/rayatsenior/" class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/rayatsenior/" class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Rayat Sênior</h1>
+          <span></span>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Início<br></a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <!-- Example dropdown (commented out if not needed)
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            -->
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+    </div>
+
+  </header><!-- End Header -->
+
+  <!-- ======= Main ======= -->
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Marque sua Visita</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Início</a></li>
+            <li class="current">Marque sua Visita</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Booking Form Section -->
+    <div class="container booking-box">
+      <h2 class="text-center mb-4">Marque sua Visita</h2>
+
+      <form id="booking-form" class="mt-4">
+        <div class="mb-4">
+          <label for="name" class="form-label">Nome Completo</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="phone" class="form-label">Telefone/WhatsApp</label>
+          <input type="tel" class="form-control" id="phone" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="date" class="form-label">Escolha uma Data</label>
+          <input type="date" class="form-control" id="date" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="slot" class="form-label">Escolha um Horário</label>
+          <select class="form-control" id="slot" required>
+            <option value="">Selecione uma data primeiro</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Confirmar Agendamento</button>
+      </form>
+    </div><!-- End Booking Form Section -->
+
+  </main><!-- End Main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Rayat Sênior</span>
+          </a>
+          <p>Nosso cuidado começa aqui.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://www.facebook.com/rayatsenior/" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/rayatsenior/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="index.html#hero">Início<br></a></li>
+            <li><a href="index.html#about">Quem Somos</a></li>
+            <li><a href="index.html#structure">Nossa Estrutura</a></li>
+            <li><a href="index.html#services">Serviços</a></li>
+            <li><a href="index.html#testimonials">Avaliações</a></li>
+            <li><a href="index.html#faq">Perguntas Frequentes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Conheça a Rayat</h4>
+          <ul>
+            <li><a href="galeria.html">Galeria de Fotos</a></li>
+            <li><a href="#">Faça sua Cotação</a></li>
+            <li><a href="#">Venha nos visitar</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contato</h4>
+          <p>Avenida Siqueira Bueno, 57<br>
+            Belenzinho - CEP: 03059-010<br>
+            São Paulo
+          </p>
+          <p class="mt-4">
+            <strong>Phone:</strong> <span>11 95364-1740</span>
+          </p>
+          <p>
+            <strong>Email:</strong> <span>rayatresidencial@gmail.com</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span>
+        <strong class="px-1 sitename">Impact</strong>
+        <span>All Rights Reserved</span>
+      </p>
+      <div class="credits">
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files (placed near the bottom for faster page loading) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Booking Form Script -->
+  <script>
+    $(document).ready(function() {
+      // Restrict past dates: set min = today
+      const today = new Date().toISOString().split('T')[0];
+      $('#date').attr('min', today);
+
+      // Helper: format Date to "DD/MM/YYYY"
+      function formatDateToBR(date) {
+        let day = date.getDate().toString().padStart(2, '0');
+        let month = (date.getMonth() + 1).toString().padStart(2, '0');
+        let year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+      }
+
+      // Helper: weekday name in Portuguese
+      function getDayName(date) {
+        const days = [
+          "Domingo", 
+          "Segunda-feira", 
+          "Terça-feira", 
+          "Quarta-feira", 
+          "Quinta-feira", 
+          "Sexta-feira", 
+          "Sábado"
+        ];
+        return days[date.getDay()];
+      }
+
+      // Parse "YYYY-MM-DD" to avoid time zone shift
+      function parseLocalDate(str) {
+        const parts = str.split('-'); // ["YYYY", "MM", "DD"]
+        const year  = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10) - 1; // zero-based index
+        const day   = parseInt(parts[2], 10);
+        return new Date(year, month, day);
+      }
+
+      // When user picks a date
+      $('#date').on('change', function () {
+        const rawValue = $(this).val();
+        if (!rawValue) return; // user cleared the date input
+
+        let selectedDate = parseLocalDate(rawValue);
+        let dayOfWeek = selectedDate.getDay();
+        let slotSelect = $('#slot');
+        slotSelect.empty(); // remove previous options
+
+        // Define time slots based on the weekday
+        let times;
+        if (dayOfWeek === 0) {
+          // Sunday -> no slots
+          times = [];
+        } else if (dayOfWeek === 6) {
+          // Saturday
+          times = ["09:00","10:00","11:00","12:00"];
+        } else {
+          // Weekdays
+          times = ["09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00"];
+        }
+
+        // If no times are available (e.g., Sunday)
+        if (times.length === 0) {
+          slotSelect.append(`<option value="" disabled>Sem horários disponíveis</option>`);
+        } else {
+          // Populate with valid time slots
+          times.forEach(time => {
+            slotSelect.append(`
+              <option value="${formatDateToBR(selectedDate)} (${getDayName(selectedDate)}) - ${time}">
+                ${time}
+              </option>
+            `);
+          });
+        }
+      });
+
+      // On form submission, open WhatsApp
+      $('#booking-form').on('submit', function(e) {
+        e.preventDefault();
+
+        const name = $('#name').val().trim();
+        const phone = $('#phone').val().trim();
+        const dateVal = $('#date').val();
+        const slotVal = $('#slot').val();
+
+        // Basic validation
+        if (!name || !phone || !dateVal || !slotVal) {
+          alert('Por favor, preencha todos os campos.');
+          return;
+        }
+
+        // Convert "DD/MM/YYYY (quarta-feira) - 09:00" => "DD/MM/YYYY (quarta-feira) às 09:00"
+        const formattedSlot = slotVal.replace(' - ', ' às ');
+
+        // Build WhatsApp message
+        const message = `Olá, meu nome é ${name}. Gostaria de agendar uma visita no dia ${formattedSlot}. Meu telefone é: ${phone}.`;
+
+        // WhatsApp link
+        const whatsappUrl = `https://wa.me/5511953641740?text=${encodeURIComponent(message)}`;
+
+        // Open in new tab
+        window.open(whatsappUrl, '_blank');
+      });
+    });
+  </script>
+
+</body>
+</html>

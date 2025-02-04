@@ -1030,11 +1030,7 @@ section,
     max-width: 90%;
     height: auto;
     position: relative;
-    left: -20%; /* Move the image left by 10% */
 }
-
-
-
 
 
 .hero .icon-box2 {
@@ -1952,6 +1948,12 @@ section,
   background-color: var(--accent-color);
   height: 100%;
   padding: 20px;
+
+  display: flex; /* Enable Flexbox for layout */
+  flex-direction: column; /* Stack the items vertically */
+  align-items: center; /* Center the items horizontally */
+  justify-content: center; /* Optional: Center items vertically within the container */
+  margin: 0 auto; /* Center the entire container on the page */
 }
 
 .contact .info-item {
@@ -2043,6 +2045,19 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.custom-whatsapp-link {
+    font-family: inherit;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+}
+
+.custom-whatsapp-link:hover {
+    color: inherit; /* Keep the color the same */
+    text-decoration: underline; /* Optional: No underline on hover */
 }
 
 /*--------------------------------------------------------------
