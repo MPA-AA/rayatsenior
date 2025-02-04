@@ -53,12 +53,13 @@
 }
 
 .accent-background {
-  --background-color: #2C3E57;
+  --background-color: #f9f7f7;
   --default-color: #f9f7f7;
   --heading-color: #f9f7f7;
   --accent-color: #f9f7f7;
   --surface-color: #C8B889;
   --contrast-color: #f9f7f7;
+  --background-color2: #295a88;
 }
 
 /* Smooth scroll */
@@ -231,7 +232,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #2C3E57;
+  --background-color: #295a88;
   --heading-color: #f9f7f7;
   color: var(--default-color);
   transition: all 0.5s;
@@ -584,7 +585,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: var(--background-color2);
   font-size: 14px;
   position: relative;
 }
@@ -1116,6 +1117,19 @@ section,
   position: absolute;
   left: calc(50% - 47px);
   top: calc(50% - 47px);
+}
+
+/* ============================
+   Quem Somos Box Styling
+============================ */
+.quem-somos-box {
+  background-color: #295a88;
+  color: #f9f7f7;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  /* text-align: center; If you want centered text */
 }
 
 /*--------------------------------------------------------------
