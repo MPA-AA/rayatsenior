@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- 
+  Note: 
+  - All visible text remains the same.
+  - Coding and structural issues have been corrected.
+  - Duplicate/erroneous icons and extra characters have been removed.
+  - Class name typos and missing elements fixed.
+  - The <html> lang attribute updated to "pt-BR" for accuracy.
+  - You may need to include Bootstrap Icons if you're using "bi" classes (e.g. <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">).
+-->
+
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <title>Início - Rayat Sênior</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -19,6 +30,9 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- If using Bootstrap Icons (for "bi" classes), uncomment or add: 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -38,12 +52,15 @@
 
 <body class="index-page">
 
+  <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
 
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contato@rayatsenior.com">contato@rayatsenior.com</a></i>
+          <i class="bi bi-envelope d-flex align-items-center">
+            <a href="mailto:contato@rayatsenior.com">contato@rayatsenior.com</a>
+          </i>
           <i class="bi bi-whatsapp d-flex align-items-center ms-4">
             <a href="https://wa.me/5511953641740?text=Gostaria+de+informa%C3%A7%C3%B5es+sobre+Rayat+Residencial+S%C3%AAnior." target="_blank" rel="noopener noreferrer">WhatsApp</a>
           </i>
@@ -55,8 +72,7 @@
       </div>
     </div><!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-cente">
-
+    <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
@@ -66,59 +82,56 @@
         </a>
 
         <nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="#hero">Início<br></a></li>
-    <li><a href="#about">Quem Somos</a></li>
-    <li><a href="#structure">Nossa Estrutura</a></li>
-    <li><a href="#services">Serviços</a></li>
-    <li><a href="#testimonials">Avaliações</a></li>
-    
-    <!-- Commenting out the Dropdown options -->
-    <!--
-    <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-      <ul>
-        <li><a href="#">Dropdown 1</a></li>
-        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">Deep Dropdown 1</a></li>
-            <li><a href="#">Deep Dropdown 2</a></li>
-            <li><a href="#">Deep Dropdown 3</a></li>
-            <li><a href="#">Deep Dropdown 4</a></li>
-            <li><a href="#">Deep Dropdown 5</a></li>
+            <li><a href="#hero">Início<br></a></li>
+            <li><a href="#about">Quem Somos</a></li>
+            <li><a href="#structure">Nossa Estrutura</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#testimonials">Avaliações</a></li>
+            <!-- 
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            -->
+            <li><a href="#contact">Contato</a></li>
           </ul>
-        </li>
-        <li><a href="#">Dropdown 2</a></li>
-        <li><a href="#">Dropdown 3</a></li>
-        <li><a href="#">Dropdown 4</a></li>
-      </ul>
-    </li>
-    -->
-    <li><a href="#contact">Contato</a></li>
-  </ul>
-  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
-
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </div>
-
     </div>
-
   </header>
+  <!-- End Header -->
 
   <main class="main">
 
-<!------------------------------------------------------------------------------------------------------------>
-
-    <!-- Hero Section -->
+    <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero section accent-background">
-
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5 justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2 style="color: #295a88;"><span>Bem-vindo</span><span class="accent"></span></h2>
+            <h2 style="color: #295a88;">
+              <span>Bem-vindo</span>
+              <span class="accent"></span>
+            </h2>
             <p style="color: #295a88;">Nosso cuidado começa aqui.</p>
             <div class="d-flex">
-            <a href="https://www.google.com.br/maps/place/Rayat+Residencial+Sênior/@-23.5405549,-46.5994355,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5970da45c03b:0x6ddd605d90d227af!8m2!3d-23.5405549!4d-46.5968552!16s%2Fg%2F11trmxbvyx?entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D" class="btn-get-started" style="background-color: #295a88; color: #f9f7f7; margin-right: 15px;">Nossa Localização</a>
-            <a href="#about" class="btn-get-started" style="background-color: #295a88; color: #f9f7f7;">Quem Somos</a>
+              <a href="https://www.google.com.br/maps/place/Rayat+Residencial+Sênior/@-23.5405549,-46.5994355,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5970da45c03b:0x6ddd605d90d227af!8m2!3d-23.5405549!4d-46.5968552!16s%2Fg%2F11trmxbvyx?entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D"
+                 class="btn-get-started" style="background-color: #295a88; color: #f9f7f7; margin-right: 15px;">Nossa Localização</a>
+              <a href="#about" class="btn-get-started" style="background-color: #295a88; color: #f9f7f7;">Quem Somos</a>
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2">
@@ -130,81 +143,79 @@
       <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
         <div class="container position-relative">
           <div class="row gy-4 mt-5">
-            
-            <div class="col-xl-3 col-md-3">
-        <div class="icon-box2">
-          <div class="icon"><i class="fa-solid fa-camera"></i></div>
-          <h4 class="title"><a href="galeria.html" class="stretched-link">Galeria de Fotos</a></h4>
-        </div>
-      </div><!-- End Icon Box -->
-      
-      <div class="col-xl-3 col-md-3">
-        <div class="icon-box2">
-          <div class="icon"><i class="fa-solid fa-rss"></i></div>
-          <h4 class="title"><a href="blog.html" class="stretched-link">Blog da Melhor Idade</a></h4>
-        </div>
-      </div><!-- End Icon Box -->
 
             <div class="col-xl-3 col-md-3">
-        <div class="icon-box2">
-          <div class="icon"><i class="fa-solid fa-house"></i></div>
-          <h4 class="title"><a href="agendamentos.html" class="stretched-link">Marque sua Visita</a></h4>
+              <div class="icon-box2">
+                <div class="icon"><i class="fa-solid fa-camera"></i></div>
+                <h4 class="title"><a href="galeria.html" class="stretched-link">Galeria de Fotos</a></h4>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="col-xl-3 col-md-3">
+              <div class="icon-box2">
+                <div class="icon"><i class="fa-solid fa-rss"></i></div>
+                <h4 class="title"><a href="blog.html" class="stretched-link">Blog da Melhor Idade</a></h4>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="col-xl-3 col-md-3">
+              <div class="icon-box2">
+                <div class="icon"><i class="fa-solid fa-house"></i></div>
+                <h4 class="title"><a href="agendamentos.html" class="stretched-link">Marque sua Visita</a></h4>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="col-xl-3 col-md-3">
+              <div class="icon-box2">
+                <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                <!-- Removed duplicate fa-rss icon -->
+                <h4 class="title"><a href="cotacao.html" class="stretched-link">Faça sua Cotação</a></h4>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
         </div>
-      </div><!-- End Icon Box -->
-
-      <div class="col-xl-3 col-md-3">
-        <div class="icon-box2">
-          <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-          <i class="fa-solid fa-rss"></i>
-          <h4 class="title"><a href="cotacao.html" class="stretched-link">Faça sua Cotação</a></h4>
-        </div>
-      </div><!-- End Icon Box -->
       </div>
-      </div>
-      </div>
+    </section>
+    <!-- End Hero Section -->
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
+    <!-- ======= About Section ======= -->
     <section id="about" class="about section">
-  <div 
-    class="container section-title quem-somos-box" 
-    data-aos="fade-up"
+      <div class="container section-title quem-somos-box" data-aos="fade-up">
+      </div>
 
-<!-- Section Title -->
-<div class="container section-title" data-aos="fade-up" style="font-size: 1.2em; line-height: 1.6em; font-family: Arial, sans-serif;">
-  <h2 style="font-size: 1.5em; font-weight: bold; color: #f9f7f7;"">Quem Somos<br></h2>
-  <p>
-    <em><strong>Fundada em 2023</strong>, a Rayat Residencial Sênior nasceu com a missão de resgatar a sensação de lar para idosos que buscam <strong>conforto, segurança</strong> e <strong>cuidados de qualidade</strong>. Inspirados pelo desejo de oferecer um ambiente acolhedor e familiar, dedicamo-nos a proporcionar uma transição tranquila e equilibrada para essa nova fase da vida.
-  </p>
-  <p>
-    Aqui, cada detalhe é pensado para garantir <strong>bem-estar físico, emocional e social</strong>. Nossa estrutura 100% térrea, totalmente acessível, foi projetada para atender às necessidades individuais de cada residente, promovendo a <strong>autonomia</strong> e a <strong>qualidade de vida</strong>. Contamos com uma equipe qualificada, disponível <strong>24 horas por dia</strong>, que atua com empatia e respeito, priorizando a saúde e o conforto de nossos moradores.
-  </p>
-  <p>
-    Além de serviços como <strong>enfermagem, fisioterapia, acompanhamento nutricional</strong> e <strong>atividades recreativas</strong>, oferecemos uma gama de diferenciais, incluindo day use (creche), devolutivas mensais para familiares e opções de <strong>terapias individuais</strong>.
-  </p>
-  <p>
-    Na Rayat, acreditamos que cada história merece ser cuidada com <strong>amor e dedicação</strong>, valorizando as memórias e tradições de nossos residentes enquanto criamos um espaço de novas possibilidades e experiências.
-  </p>
-  <p>
-    Seja para uma estadia longa ou apenas um dia, estamos prontos para acolher com carinho e atenção, tornando cada momento especial.</em>
-  </p>
-</div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up" style="font-size: 1.2em; line-height: 1.6em; font-family: Arial, sans-serif;">
+        <h2 style="font-size: 1.5em; font-weight: bold; color: #f9f7f7;">Quem Somos<br></h2>
+        <p>
+          <em><strong>Fundada em 2023</strong>, a Rayat Residencial Sênior nasceu com a missão de resgatar a sensação de lar para idosos que buscam <strong>conforto, segurança</strong> e <strong>cuidados de qualidade</strong>. Inspirados pelo desejo de oferecer um ambiente acolhedor e familiar, dedicamo-nos a proporcionar uma transição tranquila e equilibrada para essa nova fase da vida.
+        </p>
+        <p>
+          Aqui, cada detalhe é pensado para garantir <strong>bem-estar físico, emocional e social</strong>. Nossa estrutura 100% térrea, totalmente acessível, foi projetada para atender às necessidades individuais de cada residente, promovendo a <strong>autonomia</strong> e a <strong>qualidade de vida</strong>. Contamos com uma equipe qualificada, disponível <strong>24 horas por dia</strong>, que atua com empatia e respeito, priorizando a saúde e o conforto de nossos moradores.
+        </p>
+        <p>
+          Além de serviços como <strong>enfermagem, fisioterapia, acompanhamento nutricional</strong> e <strong>atividades recreativas</strong>, oferecemos uma gama de diferenciais, incluindo day use (creche), devolutivas mensais para familiares e opções de <strong>terapias individuais</strong>.
+        </p>
+        <p>
+          Na Rayat, acreditamos que cada história merece ser cuidada com <strong>amor e dedicação</strong>, valorizando as memórias e tradições de nossos residentes enquanto criamos um espaço de novas possibilidades e experiências.
+        </p>
+        <p>
+          Seja para uma estadia longa ou apenas um dia, estamos prontos para acolher com carinho e atenção, tornando cada momento especial.</em>
+        </p>
+      </div>
+      <!-- End Section Title -->
+    </section>
+    <!-- End About Section -->
 
-    <!-- End Section Title -->
-
-    </section><!-- /About Section -->
-
-     <!-- Structure Section -->
-    <section id="structure" class="testimonials section">
-
+    <!-- ======= Structure Section ======= -->
+    <section id="structure" class="structure section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Nossa Estrutura</h2>
-      </div><!-- End Section Title -->
+      </div>
+      <!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
             {
@@ -231,182 +242,161 @@
               }
             }
           </script>
-          <div class="swiper-wrapper">
 
+          <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/1.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
+
             <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/2.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
+
             <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/3.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
+
             <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/4.PNG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
+
             <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/5.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
-             <div class="swiper-slide">
+
+            <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/6.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
-             <div class="swiper-slide">
+
+            <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/7.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  <</div>
+                <!-- Removed the extra "<" -->
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
-             <div class="swiper-slide">
+
+            <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/8.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
-             <div class="swiper-slide">
+
+            <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/9.JPG" class="structure-img" alt="">
-                <div class="stars">
-                 </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
-             <div class="swiper-slide">
+
+            <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/10.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
-             <div class="swiper-slide">
+
+            <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/11.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
-             <div class="swiper-slide">
+
+            <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/12.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
-             <div class="swiper-slide">
+
+            <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/13.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
-             <div class="swiper-slide">
+
+            <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/14.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
+
             <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/15.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
+
             <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/16.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
+
             <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/17.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
+
             <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/18.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
-            
+
             <div class="swiper-slide">
               <div class="structure-item">
                 <img src="assets/img/19.JPG" class="structure-img" alt="">
-                <div class="stars">
-                  </div>
+                <div class="stars"></div>
               </div>
             </div><!-- End structure item -->
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
+    </section>
+    <!-- End Structure Section -->
 
-    </section><!-- /Structure Section -->
-
-    <!-- Services Section -->
+    <!-- ======= Services Section ======= -->
     <section id="services" class="services section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Nossos Serviços</h2>
         <p>Serviços incluidos na mensalidade</p>
-      </div><!-- End Section Title -->
+      </div>
+      <!-- End Section Title -->
 
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
+            <div class="service-item position-relative">
               <div class="icon">
                 <i class="fa-solid fa-brain"></i>
               </div>
@@ -435,7 +425,7 @@
             </div>
           </div><!-- End Service Item -->
 
-           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
                 <i class="fa-solid fa-dumbbell"></i>
@@ -464,24 +454,21 @@
               <p>Mensal</p>
             </div>
           </div><!-- End Service Item -->
-
         </div>
-
       </div>
+    </section>
+    <!-- End Services Section -->
 
-    </section><!-- /Services Section -->
-
-    <!-- Testimonials Section -->
+    <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Avaliações</h2>
         <p>Google Reviews</p>
-      </div><!-- End Section Title -->
+      </div>
+      <!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
             {
@@ -508,21 +495,27 @@
               }
             }
           </script>
-          <div class="swiper-wrapper">
 
+          <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/Google.png" class="testimonial-img" alt="">
                 <h3>C.A.G</h3>
                 <h4>Cliente</h4>
                 <div class="stars">
-                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p>
                   <i class="fa-solid fa-quote-left"></i>
-                  <span>A casa tem o sistema day use (creche) e é espetacular. Os cuidados são muito bons, o Iago, o Daniel e a enfermeira Verônica são muito prestativos, atenciosos e compreensivos.
-Meu pai, portador de Alzheimer, esteve na casa no sistema de day use e foi muito bem cuidado. Refeições (6 ao dia), banho, higiene, trabalhos cognitivos, socialização, afeto e carinho são os diferenciais da casa.
-Não temos nada que desabone. Ao contrário, minha família só tem elogios.</span>
+                  <span>
+                    A casa tem o sistema day use (creche) e é espetacular. Os cuidados são muito bons, o Iago, o Daniel e a enfermeira Verônica são muito prestativos, atenciosos e compreensivos.
+                    Meu pai, portador de Alzheimer, esteve na casa no sistema de day use e foi muito bem cuidado. Refeições (6 ao dia), banho, higiene, trabalhos cognitivos, socialização, afeto e carinho são os diferenciais da casa.
+                    Não temos nada que desabone. Ao contrário, minha família só tem elogios.
+                  </span>
                   <i class="fa-solid fa-quote-right"></i>
                 </p>
               </div>
@@ -534,11 +527,17 @@ Não temos nada que desabone. Ao contrário, minha família só tem elogios.</sp
                 <h3>A.M.O</h3>
                 <h4>Cliente</h4>
                 <div class="stars">
-                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p>
                   <i class="fa-solid fa-quote-left"></i>
-                  <span>Estou extremamente satisfeita com os cuidados proporcionados pelos profissionais do Rayat Residencial à minha sogra, uma mulher lúcida de 97 anos. Gostaria de expressar minha admiração pela qualidade excepcional dos serviços prestados. O carinho e a atenção dedicados são verdadeiramente notáveis. Além disso, é importante ressaltar a beleza e funcionalidade da casa, que é luminosa, arejada e acessível.</span>
+                  <span>
+                    Estou extremamente satisfeita com os cuidados proporcionados pelos profissionais do Rayat Residencial à minha sogra, uma mulher lúcida de 97 anos. Gostaria de expressar minha admiração pela qualidade excepcional dos serviços prestados. O carinho e a atenção dedicados são verdadeiramente notáveis. Além disso, é importante ressaltar a beleza e funcionalidade da casa, que é luminosa, arejada e acessível.
+                  </span>
                   <i class="fa-solid fa-quote-right"></i>
                 </p>
               </div>
@@ -550,11 +549,17 @@ Não temos nada que desabone. Ao contrário, minha família só tem elogios.</sp
                 <h3>J.H</h3>
                 <h4>Cliente</h4>
                 <div class="stars">
-                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p>
                   <i class="fa-solid fa-quote-left"></i>
-                  <span>A casa é acolhedora, com amplo espaço, limpa e organizada, as profissionais são atenciosas e o gerente muito educado, oferecem várias atividades aos idosos. Gostei muito e super recomendo!!!</span>
+                  <span>
+                    A casa é acolhedora, com amplo espaço, limpa e organizada, as profissionais são atenciosas e o gerente muito educado, oferecem várias atividades aos idosos. Gostei muito e super recomendo!!!
+                  </span>
                   <i class="fa-solid fa-quote-right"></i>
                 </p>
               </div>
@@ -566,12 +571,18 @@ Não temos nada que desabone. Ao contrário, minha família só tem elogios.</sp
                 <h3>C.D</h3>
                 <h4>Cliente</h4>
                 <div class="stars">
-                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p>
                   <i class="fa-solid fa-quote-left"></i>
-                  <span>Minha prima esta há dois meses contando com a ajuda e cuidado destes ótimos profissionais, que a atenderam  e acolheram com carinho e profissionalismo.
-A casa é novinha , tudo limpinho e com acessibilidade. Agradeço ao Iago e as Veronicas , enfermeira e cuidadora e a toda equipe obrigada</span>
+                  <span>
+                    Minha prima esta há dois meses contando com a ajuda e cuidado destes ótimos profissionais, que a atenderam  e acolheram com carinho e profissionalismo.
+                    A casa é novinha , tudo limpinho e com acessibilidade. Agradeço ao Iago e as Veronicas , enfermeira e cuidadora e a toda equipe obrigada
+                  </span>
                   <i class="fa-solid fa-quote-right"></i>
                 </p>
               </div>
@@ -583,49 +594,56 @@ A casa é novinha , tudo limpinho e com acessibilidade. Agradeço ao Iago e as V
                 <h3>M.C.L</h3>
                 <h4>Cliente</h4>
                 <div class="stars">
-                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p>
                   <i class="fa-solid fa-quote-left"></i>
-                  <span>Excelente Instalacao
-Profissionais competentes carinhosos e muito atenciosos com suporte médico fisioterapêutico nutricional muito atuante cuidadoras e enfermeiras de otimo nível
-Estou bem contente com a escolha deste local. Recomendo.</span>
+                  <span>
+                    Excelente Instalacao
+                    Profissionais competentes carinhosos e muito atenciosos com suporte médico fisioterapêutico nutricional muito atuante cuidadoras e enfermeiras de otimo nível
+                    Estou bem contente com a escolha deste local. Recomendo.
+                  </span>
                   <i class="fa-solid fa-quote-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
-            
+
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/Google.png" class="testimonial-img" alt="">
                 <h3>A</h3>
                 <h4>Cliente</h4>
                 <div class="stars">
-                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                 </div>
                 <p>
                   <i class="fa-solid fa-quote-left"></i>
-                  <span>Colocamos minha avó que tem alzheimer na Rayat Residencial depois de muita procura e decepção com as outras casas e foi a melhor coisa que fizemos. Minha avó foi muito bem cuidada e recebeu todo o carinho e atenção que precisava. A casa é plana, limpa, bem iluminada e conta com excelentes profissionais. As oficinas e atividades são ótimas para os idosos, pois além do entretenimento, trabalham a memória e a capacidade de socialização. Recomendo demais!</span>
+                  <span>
+                    Colocamos minha avó que tem alzheimer na Rayat Residencial depois de muita procura e decepção com as outras casas e foi a melhor coisa que fizemos. Minha avó foi muito bem cuidada e recebeu todo o carinho e atenção que precisava. A casa é plana, limpa, bem iluminada e conta com excelentes profissionais. As oficinas e atividades são ótimas para os idosos, pois além do entretenimento, trabalham a memória e a capacidade de socialização. Recomendo demais!
+                  </span>
                   <i class="fa-solid fa-quote-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
-
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
+    </section>
+    <!-- End Testimonials Section -->
 
-    </section><!-- /Testimonials Section -->
-
-    <!-- Faq Section -->
+    <!-- ======= Faq Section ======= -->
     <section id="faq" class="faq section">
-
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="content px-xl-5">
               <h3><span>Perguntas</span><strong> Frequentes</strong></h3>
@@ -633,7 +651,6 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
             <div class="faq-container">
               <div class="faq-item faq-active">
                 <h3><span class="num">1.</span> <span>Vocês oferecem vagas masculinas e femininas?</span></h3>
@@ -672,32 +689,29 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
                 <div class="faq-content">
                   <p>Não. Na Rayat as visitas são irrestritas. Para nós é essencial que nossos residentes mantenham fortes laços familiares, o que é chave no envelhicimento saudável!</p>
                 </div>
-               <i class="faq-toggle fa-solid fa-chevron-right"></i>
+                <i class="faq-toggle fa-solid fa-chevron-right"></i>
               </div><!-- End Faq item-->
-
             </div>
-
           </div>
         </div>
-
       </div>
+    </section>
+    <!-- End Faq Section -->
 
-    </section><!-- /Faq Section -->
-    
-        <!-- Contact Section -->
+    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contato</h2>
         <p>Entre em contato com Rayat Sênior</p>
-      </div><!-- End Section Title -->
+      </div>
+      <!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <div class="info-container d-flex flex-column align-items-center justify-content-center">
-              
+
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="fa-solid fa-location-dot"></i>
                 <div>
@@ -713,14 +727,17 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
                   <p>11 95364-1740</p>
                 </div>
               </div><!-- End Info Item -->
-              
-               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
                 <i class="fa-brands fa-whatsapp"></i>
                 <div>
                   <h3>Contate-nos via</h3>
-                  <p><a href="https://wa.me/5511953641740?text=Gostaria+de+informa%C3%A7%C3%B5es+sobre+Rayat+Residencial+S%C3%AAnior." class="custom-whatsapp-link" style="font-family: inherit; color: inherit; text-decoration: underline;">WhatsApp</a></p>
-                  </div>
-                  </div><!-- End Info Item -->
+                  <p>
+                    <a href="https://wa.me/5511953641740?text=Gostaria+de+informa%C3%A7%C3%B5es+sobre+Rayat+Residencial+S%C3%AAnior."
+                       class="custom-whatsapp-link" style="font-family: inherit; color: inherit; text-decoration: underline;">WhatsApp</a>
+                  </p>
+                </div>
+              </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="fa-solid fa-envelope"></i>
@@ -737,37 +754,33 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
                   <p>Seg-Sex: 9AM - 6PM</p>
                 </div>
               </div><!-- End Info Item -->
-              
+
             </div>
-
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
 
-    </section><!-- /Contact Section -->
-
-    <!-- Recent Posts Section -->
+    <!-- ======= Recent Posts Section ======= -->
     <section id="recent-posts" class="recent-posts section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Blog da Melhor Idade</h2>
         <p>Posts Recentes</p>
-      </div><!-- End Section Title -->
+      </div>
+      <!-- End Section Title -->
 
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <article>
-
               <div class="post-img">
                 <img src="assets/img/blog/musica.jpg" alt="" class="img-fluid">
               </div>
-
               <h2 class="title">
                 <a href="post_musica.html">Música e Envelhecimento: Como Tocar um Instrumento Pode Proteger Seu Cérebro</a>
               </h2>
-
               <div class="d-flex align-items-center">
                 <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
@@ -777,21 +790,17 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
                   </p>
                 </div>
               </div>
-
             </article>
           </div><!-- End post list item -->
 
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <article>
-
               <div class="post-img">
                 <img src="assets/img/blog/comida.jpg" alt="" class="img-fluid">
               </div>
-
               <h2 class="title">
                 <a href="post_comida.html">Uma Dieta Saudável para um Envelhecimento Saudável</a>
               </h2>
-
               <div class="d-flex align-items-center">
                 <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
@@ -801,21 +810,17 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
                   </p>
                 </div>
               </div>
-
             </article>
           </div><!-- End post list item -->
 
           <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <article>
-
               <div class="post-img">
                 <img src="assets/img/blog/saudavel.jpg" alt="" class="img-fluid">
               </div>
-
               <h2 class="title">
                 <a href="post_saudavel.html">O que é Envelhecimento Saudável?</a>
               </h2>
-
               <div class="d-flex align-items-center">
                 <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
@@ -825,22 +830,18 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
                   </p>
                 </div>
               </div>
-
             </article>
           </div><!-- End post list item -->
-
         </div><!-- End recent posts list -->
-
       </div>
-
-    </section><!-- /Recent Posts Section -->
+    </section>
+    <!-- End Recent Posts Section -->
 
   </main>
+  <!-- End #main -->
 
-<!------------------------------------------------------------------------------------------------------------>
-
+  <!-- ======= Footer ======= -->
   <footer id="footer" class="footer accent-background">
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
@@ -849,21 +850,21 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
           </a>
           <p>Nosso cuidado começa aqui.</p>
           <div class="social-links d-flex mt-4">
-          <a href="https://www.facebook.com/rayatsenior/" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/rayatsenior/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/rayatsenior/" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/rayatsenior/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
           <h4>Links Rápidos</h4>
           <ul>
-    <li><a href="#hero">Início<br></a></li>
-    <li><a href="#about">Quem Somos</a></li>
-    <li><a href="#structure">Nossa Estrutura</a></li>
-    <li><a href="#services">Serviços</a></li>
-    <li><a href="#testimonials">Avaliações</a></li>
-    <li><a href="#faq">Perguntas Frequentes</a></li>
-    <li><a href="blog.html">Blog</a></li>
+            <li><a href="#hero">Início<br></a></li>
+            <li><a href="#about">Quem Somos</a></li>
+            <li><a href="#structure">Nossa Estrutura</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#testimonials">Avaliações</a></li>
+            <li><a href="#faq">Perguntas Frequentes</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
         </div>
 
@@ -886,7 +887,6 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
           <p class="mt-4"><strong>Phone:</strong> <span>11 95364-1740</span></p>
           <p><strong>Email:</strong> <span>contato@rayatsenior.com</span></p>
         </div>
-
       </div>
     </div>
 
@@ -900,11 +900,13 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-
   </footer>
+  <!-- End Footer -->
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -923,5 +925,4 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
