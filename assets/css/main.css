@@ -2629,7 +2629,7 @@ section,
 } /* End of mobile nav media query */
 
 /*--------------------------------------------------------------
-# Icon Box Overrides (for screens up to 1000px)
+# Icon Box Overrides (for screens up to 800px)
 --------------------------------------------------------------*/
 @media (max-width: 800px) {
   /* Force grid columns for icon boxes to be 50% width (so two per row) */
@@ -2672,4 +2672,20 @@ section,
   }
 }
 
+/*--------------------------------------------------------------
+# ServiceBox Overrides (for screens up to 800px)
+--------------------------------------------------------------*/
+@media (max-width: 800px) {
+  /* Force service columns to be 50% width (two per row) */
+  .services .col-lg-4,
+  .services .col-md-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  /* Optional: reduce vertical gap between rows if needed */
+  .services .row {
+    row-gap: 10px !important;
+  }
+}
 
