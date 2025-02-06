@@ -500,8 +500,8 @@ h6 {
   
   /* Adjust the icon boxes (the internal styling) */
   .hero .icon-box2 {
-    padding: 20px 10px;
-    margin: 10px auto;
+    padding: 10px 10px;
+    margin: 5px auto;
     height: auto;
     width: 100%;
   }
