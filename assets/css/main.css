@@ -468,12 +468,21 @@ h6 {
 }
   
 @media (max-width: 640px) {
+  /* Stack buttons vertically and add a gap between them */
+  .hero .d-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px !important;  /* Adds 30px space between buttons */
+  }
+  
   .hero .btn-get-started {
-    padding: 10px 20px !important;      /* Reduce the inner spacing */
-    font-size: 13px !important;         /* Make the text slightly smaller */
-    white-space: nowrap !important;     /* Keep the text on one line */
-    letter-spacing: 0 !important;       /* Remove extra letter-spacing if any */
-    border: 2px solid red;              /* TEMPORARY: Adds a red border for testing */
+    padding: 10px 16px !important;       /* Increased padding */
+    font-size: 14px !important;           /* Increased font size */
+    white-space: nowrap !important;
+    letter-spacing: 0 !important;
+    max-width: 90%;
+    box-sizing: border-box;
+    border: 2px solid red !important;     /* For testing */
   }
 }
 
