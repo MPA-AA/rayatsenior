@@ -469,9 +469,11 @@ h6 {
   
 @media (max-width: 640px) {
   .hero .btn-get-started {
-    padding: 10px 20px;      /* Reduced padding to make the button smaller */
-    font-size: 13px;         /* Smaller font size for a better fit on mobile */
-    white-space: nowrap;     /* Prevents the text from wrapping to a new line */
+    padding: 10px 20px !important;      /* Reduce the inner spacing */
+    font-size: 13px !important;         /* Make the text slightly smaller */
+    white-space: nowrap !important;     /* Keep the text on one line */
+    letter-spacing: 0 !important;       /* Remove extra letter-spacing if any */
+    border: 2px solid red;              /* TEMPORARY: Adds a red border for testing */
   }
 }
 
