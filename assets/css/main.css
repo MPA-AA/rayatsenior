@@ -467,55 +467,6 @@ h6 {
   }
 }
 
-@media (max-width: 640px) {
-  /* Ensure the hero text in the left column stays left-aligned */
-  .hero .col-lg-6 {
-    text-align: left;
-  }
-  
-  /* Stack the buttons vertically with gap */
-  .hero .col-lg-6 > div.d-flex {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px !important;
-  }
-  
-  /* Adjust button styles */
-  .hero .btn-get-started {
-    padding: 10px 16px !important;
-    font-size: 14px !important;
-    white-space: nowrap !important;
-    letter-spacing: 0 !important;
-    margin: 0 !important;
-    max-width: 90%;
-    box-sizing: border-box;
-  }
-  
-  /* Force the grid columns for icon boxes to be 50% width (two per row) */
-  .hero .col-xl-3,
-  .hero .col-md-3 {
-    flex: 0 0 50% !important;
-    max-width: 50% !important;
-  }
-  
-  /* Adjust the icon boxes (the internal styling) */
-  .hero .icon-box2 {
-    padding: 10px 10px;
-    margin: 5px auto;
-    height: auto;
-    width: 100%;
-  }
-  
-  .hero .icon-box2 .icon {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .hero .icon-box2 .title {
-    font-size: 16px;
-  }
-}
-
   .navmenu {
     padding: 0;
     z-index: 9997;
@@ -747,6 +698,16 @@ h6 {
 .footer .credits {
   margin-top: 4px;
   font-size: 13px;
+}
+
+/* Force the footer (and its contents) to use the correct colors */
+footer.accent-background {
+  background-color: #295a88 !important;
+  color: #f9f7f7 !important;
+}
+
+footer.accent-background * {
+  color: #f9f7f7 !important;
 }
 
 /*--------------------------------------------------------------
@@ -2637,4 +2598,57 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Mobile Nav
+--------------------------------------------------------------*/
+
+@media (max-width: 640px) {
+  /* Ensure the hero text in the left column stays left-aligned */
+  .hero .col-lg-6 {
+    text-align: left;
+  }
+  
+  /* Stack the buttons vertically with gap */
+  .hero .col-lg-6 > div.d-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px !important;
+  }
+  
+  /* Adjust button styles */
+  .hero .btn-get-started {
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
+    letter-spacing: 0 !important;
+    margin: 0 !important;
+    max-width: 90%;
+    box-sizing: border-box;
+  }
+  
+  /* Force the grid columns for icon boxes to be 50% width (two per row) */
+  .hero .col-xl-3,
+  .hero .col-md-3 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  
+  /* Adjust the icon boxes (the internal styling) */
+  .hero .icon-box2 {
+    padding: 10px 10px !important;
+    margin: 5px auto !important;
+    height: auto !important;
+    width: 100% !important;
+  }
+  
+  .hero .icon-box2 .icon {
+    font-size: 24px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .hero .icon-box2 .title {
+    font-size: 16px !important;
+  }
 }
