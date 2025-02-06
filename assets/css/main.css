@@ -465,6 +465,15 @@ h6 {
     cursor: pointer;
     transition: color 0.3s;
   }
+}
+  
+@media (max-width: 640px) {
+  .hero .btn-get-started {
+    padding: 10px 20px;      /* Reduced padding to make the button smaller */
+    font-size: 13px;         /* Smaller font size for a better fit on mobile */
+    white-space: nowrap;     /* Prevents the text from wrapping to a new line */
+  }
+}
 
   .navmenu {
     padding: 0;
