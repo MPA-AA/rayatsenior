@@ -2653,16 +2653,22 @@ section,
 
   /* Make the icon boxes square and size them consistently */
   .hero .icon-box2 {
-    width: clamp(100px, 25vw, 550px) !important;
-    height: clamp(100px, 25vw, 550px) !important;
-    padding: clamp(5px, 2vw, 5px) !important;
-    margin: 2px auto !important;
-    box-sizing: border-box;
-  }
+  width: clamp(100px, 35vw, 550px) !important;
+  height: clamp(100px, 35vw, 550px) !important;
+  padding: clamp(6px, 2vw, 6px) !important;
+  margin: 2px auto !important;
+  box-sizing: border-box;
+  display: flex;               /* Enable Flexbox */
+  flex-direction: column;      /* Stack children vertically */
+  justify-content: center;     /* Center vertically */
+  align-items: center;         /* Center horizontally */
+  text-align: center;          /* Center text */
+}
+
 
   /* Adjust the inner icon size */
   .hero .icon-box2 .icon {
-    font-size: clamp(18px, 4vw, 32px) !important;
+    font-size: clamp(26px, 7vw, 32px) !important;
     margin-bottom: clamp(5px, 2vw, 10px) !important;
   }
 
@@ -2676,16 +2682,51 @@ section,
 # ServiceBox Overrides (for screens up to 800px)
 --------------------------------------------------------------*/
 @media (max-width: 800px) {
-  /* Force service columns to be 50% width (two per row) */
+  /* Make sure the row behaves as a flex container with wrapping and a gap */
+  .services .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;              /* Gap between boxes */
+    justify-content: center; /* Center the row items */
+    /* Remove any negative margins if they exist */
+    margin: 0;
+  }
+  
+  /* For each service column, calculate a width that accounts for the gap */
   .services .col-lg-4,
   .services .col-md-6 {
-    flex: 0 0 50% !important;
-    max-width: 50% !important;
+    /* Using a flex shorthand that allows the box to grow, 
+       with a basis calculated as 50% minus half the gap (i.e. 10px) */
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    padding: 0;   /* Remove default paddings that might push it off-screen */
+    margin: 0;
   }
-
-  /* Optional: reduce vertical gap between rows if needed */
-  .services .row {
-    row-gap: 10px !important;
+  
+  /* Style the service box itself */
+  .services .service-item {
+    padding: clamp(10px, 2vw, 20px);
+    box-sizing: border-box;
+    background-color: var(--surface-color);
+    /* Use flex to center the content within the box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Set a minimum height for consistency across boxes */
+    min-height: 150px;
+  }
+  
+  /* Optional: Adjust the typography within the service box */
+  .services .service-item h3 {
+    font-size: clamp(18px, 4vw, 24px) !important;
+    margin-bottom: 0.5rem;
+  }
+  .services .service-item p {
+    font-size: clamp(14px, 3vw, 16px) !important;
   }
 }
+
+
 
