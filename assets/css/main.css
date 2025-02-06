@@ -468,23 +468,32 @@ h6 {
 }
   
 @media (max-width: 640px) {
-  /* Stack buttons vertically and add a gap between them */
-  .hero .d-flex {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px !important;  /* Adds 30px space between buttons */
+  /* Ensure the hero text (heading and paragraph) in the left column stays left-aligned */
+  .hero .col-lg-6 {
+    text-align: left;
   }
   
+  /* Target the container that holds the buttons only.
+     This selector assumes that the buttons are inside a div (with class "d-flex")
+     that is a direct child of the .col-lg-6 container. */
+  .hero .col-lg-6 > div.d-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px !important;  /* Creates 30px space between the buttons */
+  }
+  
+  /* Adjust the button styles */
   .hero .btn-get-started {
     padding: 10px 16px !important;       /* Increased padding */
     font-size: 14px !important;           /* Increased font size */
     white-space: nowrap !important;
     letter-spacing: 0 !important;
+    margin: 0 !important;                /* Remove any extra margin */
     max-width: 90%;
     box-sizing: border-box;
-    border: 2px solid red !important;     /* For testing */
   }
 }
+
 
   .navmenu {
     padding: 0;
