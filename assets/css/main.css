@@ -2610,7 +2610,7 @@ section,
     text-align: left;
   }
   
-  /* Stack the buttons vertically with gap */
+  /* Stack the buttons vertically with a gap */
   .hero .col-lg-6 > div.d-flex {
     flex-direction: column;
     align-items: center;
@@ -2628,27 +2628,37 @@ section,
     box-sizing: border-box;
   }
   
-  /* Force the grid columns for icon boxes to be 50% width (two per row) */
+@media (max-width: 640px) {
+  /* Force grid columns for icon boxes to be 50% width (so two per row) */
   .hero .col-xl-3,
   .hero .col-md-3 {
     flex: 0 0 50% !important;
     max-width: 50% !important;
   }
-  
-  /* Adjust the icon boxes (the internal styling) */
+
+  /* Make the icon boxes square and size them consistently */
   .hero .icon-box2 {
-    padding: 10px 10px !important;
-    margin: 5px auto !important;
-    height: auto !important;
-    width: 100% !important;
+    /* Use clamp() to force the width and height to stay within a range.
+       This means: never smaller than 120px, ideally 25vw, and never larger than 200px */
+    width: clamp(120px, 25vw, 200px) !important;
+    height: clamp(120px, 25vw, 200px) !important;
+    /* Use clamp for padding so it scales fluidly but stays within a set range */
+    padding: clamp(5px, 2vw, 15px) !important;
+    margin: 10px auto !important;
+    box-sizing: border-box;
+    /* Remove any fixed percentage width/height overrides from desktop styles */
   }
-  
+
+  /* Adjust the inner icon size */
   .hero .icon-box2 .icon {
-    font-size: 24px !important;
-    margin-bottom: 10px !important;
+    /* The icon size will scale between 18px and 24px, with a preferred value based on 4vw */
+    font-size: clamp(18px, 4vw, 24px) !important;
+    margin-bottom: clamp(5px, 2vw, 10px) !important;
   }
-  
+
+  /* Adjust the title font size */
   .hero .icon-box2 .title {
-    font-size: 16px !important;
+    /* This title font size will scale between 14px and 18px */
+    font-size: clamp(14px, 3vw, 18px) !important;
   }
 }
