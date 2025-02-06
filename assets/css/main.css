@@ -2637,17 +2637,26 @@ section,
   .hero .col-md-3 {
     flex: 0 0 50% !important;
     max-width: 50% !important;
+    padding-left: 0 !important;   /* Remove extra gutter if needed */
+    padding-right: 0 !important;
+  }
+
+  /* Optional: Adjust the grid container gap if you're using a grid */
+  .icon-boxes .container {
+    gap: 5px !important; /* Reduce overall gap */
+  }
+
+  /* Reduce the vertical gap in the grid row */
+  .icon-boxes .row {
+    row-gap: 5px !important;
   }
 
   /* Make the icon boxes square and size them consistently */
   .hero .icon-box2 {
-    /* Use clamp() to set a responsive size that is never too small or too big */
     width: clamp(100px, 25vw, 550px) !important;
     height: clamp(100px, 25vw, 550px) !important;
-    /* Use clamp() for padding so it scales fluidly within limits */
     padding: clamp(5px, 2vw, 5px) !important;
-    margin: 5px auto !important;
-    gap: 10px !important;
+    margin: 2px auto !important;
     box-sizing: border-box;
   }
 
@@ -2662,4 +2671,5 @@ section,
     font-size: clamp(14px, 3vw, 24px) !important;
   }
 }
+
 
