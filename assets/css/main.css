@@ -466,34 +466,55 @@ h6 {
     transition: color 0.3s;
   }
 }
-  
+
 @media (max-width: 640px) {
-  /* Ensure the hero text (heading and paragraph) in the left column stays left-aligned */
+  /* Ensure the hero text in the left column stays left-aligned */
   .hero .col-lg-6 {
     text-align: left;
   }
   
-  /* Target the container that holds the buttons only.
-     This selector assumes that the buttons are inside a div (with class "d-flex")
-     that is a direct child of the .col-lg-6 container. */
+  /* Stack the buttons vertically with gap */
   .hero .col-lg-6 > div.d-flex {
     flex-direction: column;
     align-items: center;
-    gap: 30px !important;  /* Creates 30px space between the buttons */
+    gap: 30px !important;
   }
   
-  /* Adjust the button styles */
+  /* Adjust button styles */
   .hero .btn-get-started {
-    padding: 10px 16px !important;       /* Increased padding */
-    font-size: 14px !important;           /* Increased font size */
+    padding: 10px 16px !important;
+    font-size: 14px !important;
     white-space: nowrap !important;
     letter-spacing: 0 !important;
-    margin: 0 !important;                /* Remove any extra margin */
+    margin: 0 !important;
     max-width: 90%;
     box-sizing: border-box;
   }
+  
+  /* Force the grid columns for icon boxes to be 50% width (two per row) */
+  .hero .col-xl-3,
+  .hero .col-md-3 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  
+  /* Adjust the icon boxes (the internal styling) */
+  .hero .icon-box2 {
+    padding: 20px 10px;
+    margin: 10px auto;
+    height: auto;
+    width: 100%;
+  }
+  
+  .hero .icon-box2 .icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .hero .icon-box2 .title {
+    font-size: 16px;
+  }
 }
-
 
   .navmenu {
     padding: 0;
