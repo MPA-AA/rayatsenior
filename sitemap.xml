@@ -1,63 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.rayatsenior.com/</loc>
-        <lastmod>2025-02-07</lastmod>
-        <priority>1</priority>
-    </url>
-
-    <url>
-        <loc>https://www.rayatsenior.com/rayat-senior-galeria-de-fotos</loc>
-        <lastmod>2025-02-07</lastmod>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://www.rayatsenior.com/rayat-senior-agendamento-visita</loc>
-        <lastmod>2025-02-07</lastmod>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://www.rayatsenior.com/rayat-senior-cotacao</loc>
-        <lastmod>2025-02-07</lastmod>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://www.rayatsenior.com/rayat-senior-blog</loc>
-        <lastmod>2025-02-07</lastmod>
-        <priority>0.7</priority>
-    </url>
-
-    <url>
-        <loc>https://www.rayatsenior.com/rayat-senior-post-dieta-saudavel</loc>
-        <lastmod>2025-02-07</lastmod>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://www.rayatsenior.com/rayat-senior-post-envelhecimento-saudavel</loc>
-        <lastmod>2025-02-07</lastmod>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://www.rayatsenior.com/rayat-senior-post-musica-envelhecimento</loc>
-        <lastmod>2025-02-07</lastmod>
-        <priority>0.6</priority>
-    </url>
-    
-    <url>
-    <loc>https://www.rayatsenior.com/rayat-senior-post-bem-estar-casas-de-repouso</loc>
-    <lastmod>2025-02-07</lastmod>
-    <priority>0.6</priority>
-    </url>
-
-    <url>
-    <loc>https://www.rayatsenior.com/rayat-senior-post-qualidade-vida-casas-de-repouso</loc>
-    <lastmod>2025-02-07</lastmod>
-    <priority>0.6</priority>
-    </url>
-
+<url>
+<loc>https://rayatsenior.com/</loc>
+<lastmod>2025-02-07</lastmod>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://rayatsenior.com/rayat-senior-galeria-de-fotos</loc>
+<lastmod>2025-02-07</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://rayatsenior.com/rayat-senior-agendamento-visita</loc>
+<lastmod>2025-02-07</lastmod>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://rayatsenior.com/rayat-senior-cotacao</loc>
+<lastmod>2025-02-07</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://rayatsenior.com/rayat-senior-blog</loc>
+<lastmod>2025-02-07</lastmod>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://rayatsenior.com/rayat-senior-post-dieta-saudavel</loc>
+<lastmod>2025-02-07</lastmod>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://rayatsenior.com/rayat-senior-post-envelhecimento-saudavel</loc>
+<lastmod>2025-02-07</lastmod>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://rayatsenior.com/rayat-senior-post-musica-envelhecimento</loc>
+<lastmod>2025-02-07</lastmod>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://rayatsenior.com/rayat-senior-post-bem-estar-casas-de-repouso</loc>
+<lastmod>2025-02-07</lastmod>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://rayatsenior.com/rayat-senior-post-qualidade-vida-casas-de-repouso</loc>
+<lastmod>2025-02-07</lastmod>
+<priority>0.6</priority>
+</url>
 </urlset>
