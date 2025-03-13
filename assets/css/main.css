@@ -185,7 +185,7 @@ h6 {
     transform: translateY(-50%); /* Adjust for exact vertical centering */
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Reduced space between buttons */
+    gap: 10px; /* Space between buttons */
     z-index: 1000;
 }
 
@@ -215,6 +215,15 @@ h6 {
     background-color: #128C7E;
 }
 
+/* Call Us Button */
+.float-call {
+    background-color: #007BFF; /* Blue color for the call button */
+}
+
+.float-call:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
 /* Facebook Button */
 .float-facebook {
     background-color: #1877F2; /* Facebook blue */
@@ -232,6 +241,8 @@ h6 {
 .float-instagram:hover {
     opacity: 0.9;
 }
+
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
