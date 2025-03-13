@@ -180,12 +180,12 @@ h6 {
 /* Floating Social Media Buttons Container */
 .float-social-buttons {
     position: fixed;
-    top: 50%; /* Center vertically */
+    top: 77%; /* Bring the buttons slightly down */
     right: 20px; /* Adjust this value for horizontal positioning */
     transform: translateY(-50%); /* Adjust for exact vertical centering */
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between buttons */
+    gap: 15px; /* Space between buttons */
     z-index: 1000;
 }
 
@@ -194,10 +194,10 @@ h6 {
     background-color: #fff;
     color: #fff;
     border-radius: 50%;
-    width: 45px; /* Reduced from 60px (25% smaller) */
-    height: 45px; /* Reduced from 60px (25% smaller) */
+    width: 60px; /* Original size */
+    height: 60px; /* Original size */
     text-align: center;
-    font-size: 22.5px; /* Reduced from 30px (25% smaller) */
+    font-size: 30px; /* Original size */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
@@ -223,25 +223,6 @@ h6 {
 .float-call:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
-
-/* Facebook Button */
-.float-facebook {
-    background-color: #1877F2; /* Facebook blue */
-}
-
-.float-facebook:hover {
-    background-color: #146cdf;
-}
-
-/* Instagram Button */
-.float-instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
-
-.float-instagram:hover {
-    opacity: 0.9;
-}
-
 
 /* PHP Email Form Messages
 ------------------------------*/
