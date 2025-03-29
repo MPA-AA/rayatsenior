@@ -1162,6 +1162,35 @@ section,
     color: #295a88 !important;
 }
 
+.hero {
+  width: 100%;
+  position: relative;
+  padding: 140px 0 0 0;
+  overflow: hidden;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* Default position for desktop */
+  opacity: 0.3; /* Adjust transparency as needed */
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero-bg-img {
+    object-position: center bottom; /* Adjust for mobile */
+  }
+}
 
 /*--------------------------------------------------------------
 # About Section
