@@ -1181,16 +1181,39 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center; /* Default position for desktop */
+  object-position: center top; /* Default position for desktop */
   opacity: 0.3; /* Adjust transparency as needed */
   z-index: 1;
 }
 
 @media (max-width: 768px) {
   .hero-bg-img {
-    object-position: center bottom; /* Adjust for mobile */
+    object-position: 68% 70%; /* Adjust the horizontal (40%) and vertical (70%) positions */
   }
 }
+
+@media (min-width: 992px) {
+  .hero {
+    min-height: 700px; /* Increase height to reveal more of the image */
+  }
+}
+
+.hero-logo {
+  display: block;
+  margin-left: 0;       /* Align to the left */
+  margin-bottom: 30px;  /* Adjust space as needed */
+  max-width: 70%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .original3 {
+    width: 30px;  /* or any value you want to try */
+    height: auto; /* maintain aspect ratio */
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # About Section
