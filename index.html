@@ -957,6 +957,123 @@ Estou bem contente com a escolha deste local. Recomendo.</span>
      <i class="fa-solid fa-phone"></i>
   </a>
 </div>
+
+<!-- Updated Job Inquiry Pop-up -->
+<div id="jobPopup" class="job-popup" style="display: none;">
+  <div class="popup-content">
+    <span class="close-popup">&times;</span>
+    <h2 style="color: #295a88;">Vagas de Emprego</h2>
+    <p>Se você gostaria de trabalhar na Rayat Sênior, por favor visite a página <strong>Trabalhe Conosco</strong> clicando no botão abaixo.</p>
+    <a href="rayat-senior-trabalhe-conosco.html" class="popup-button">Trabalhe Conosco</a>
+    <p style="margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+      <i class="fas fa-exclamation-circle" style="color: #ff6b6b; font-size: 1.2em;"></i>
+      <em><strong>Candidaturas via WhatsApp não serão aceitas.</strong></em>
+      <i class="fab fa-whatsapp" style="color: #25D366; font-size: 1.2em;"></i>
+    </p>
+  </div>
+</div>
+
+<style>
+  /* Popup styles */
+  .job-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background-color: #f9f7f7;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 48px; /* Doubled from 24px to 48px */
+    cursor: pointer;
+    color: #295a88;
+    line-height: 1;
+    font-weight: bold;
+  }
+  
+  .popup-content h2 {
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .popup-content p {
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* New button styles */
+  .popup-button {
+    display: inline-block;
+    background-color: #295a88;
+    color: #f9f7f7 !important;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+    border: 2px solid #295a88;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 8px rgba(41, 90, 136, 0.2);
+  }
+  
+  .popup-button:hover {
+    background-color: #1f4a6e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(41, 90, 136, 0.3);
+  }
+  
+  .popup-button:active {
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  // Show popup after page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if they've seen it before (using sessionStorage)
+    if(!sessionStorage.getItem('jobPopupShown')) {
+      setTimeout(function() {
+        document.getElementById('jobPopup').style.display = 'flex';
+        sessionStorage.setItem('jobPopupShown', 'true');
+      }, 2000); // Show after 2 seconds
+    }
+    
+    // Close popup when X is clicked
+    document.querySelector('.close-popup').addEventListener('click', function() {
+      document.getElementById('jobPopup').style.display = 'none';
+    });
+    
+    // Also close when clicking outside content
+    document.getElementById('jobPopup').addEventListener('click', function(e) {
+      if(e.target === this) {
+        this.style.display = 'none';
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>
