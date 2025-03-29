@@ -1194,7 +1194,7 @@ section,
 
 @media (min-width: 992px) {
   .hero {
-    min-height: 700px; /* Increase height to reveal more of the image */
+    min-height: 500px; /* Increase height to reveal more of the image */
   }
 }
 
@@ -2921,3 +2921,31 @@ section,
     }
   }
 </style>
+
+
+/*--------------------------------------------------------------
+# Background Images
+--------------------------------------------------------------*/
+.page-title {
+  position: relative; /* Ensure the container is relative so absolute children position correctly */
+}
+
+.page-title-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures the image covers the container */
+  object-position: top; /* Prioritizes the top of the image */
+  opacity: 0.2;       /* Adjust transparency as needed */
+  z-index: 1;
+}
+
+
+/* Ensure the actual content is on top */
+.page-title .heading,
+.page-title nav {
+  position: relative;
+  z-index: 2;
+}
