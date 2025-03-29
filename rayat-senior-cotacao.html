@@ -1,5 +1,3 @@
-@ -1,371 +1,371 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -13,7 +11,6 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png?v=2" rel="icon">
   <link href="assets/img/apple-touch-icon.png?v=2" rel="apple-touch-icon">
-
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -33,38 +30,39 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Custom CSS for a centered box layout -->
+  <!-- Custom CSS for a centered box layout and selected card style -->
   <style>
     .booking-box {
-      max-width: 600px; 
-      margin: 40px auto; 
+      max-width: 600px;
+      margin: 40px auto;
       padding: 20px;
       border: 1px solid #ddd;
       border-radius: 8px;
       background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Highlight the selected card */
+    .service-item.selected {
+      background-color: #C8B889;
     }
   </style>
-</head>
 
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TDMZPLG6');</script>
-<!-- End Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TDMZPLG6');
+  </script>
+  <!-- End Google Tag Manager -->
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ED0XRVZE1R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ED0XRVZE1R');
-</script>
 
 <body class="starter-page-page">
 
@@ -77,8 +75,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <a href="mailto:contato@rayatsenior.com">contato@rayatsenior.com</a>
           </i>
           <i class="bi bi-whatsapp d-flex align-items-center ms-4">
-            <a href="https://wa.me/5511953641740?text=Gostaria+de+informa%C3%A7%C3%B5es+sobre+Rayat+Residencial+S%C3%AAnior."
-               target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://wa.me/5511953641740?text=Gostaria+de+informa%C3%A7%C3%B5es+sobre+Rayat+Residencial+S%C3%AAnior." target="_blank"
+              rel="noopener noreferrer">WhatsApp</a>
           </i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
@@ -86,7 +84,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a href="https://www.instagram.com/rayatsenior/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
-    </div><!-- End Top Bar -->
+    </div>
+    <!-- End Top Bar -->
 
     <div class="branding d-flex align-items-cente">
       <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -99,7 +98,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <ul>
             <li><a href="index.html">Início<br></a></li>
             <li><a href="rayat-senior-galeria-de-fotos.html">Galeria de Fotos</a></li>
-            <li><a href="rayat-senior-cotacao.html">Faça sua Cotação</a></li>
+            <li><a href="rayat-senior-cotacao.html">Orçamento Online</a></li>
             <li><a href="rayat-senior-agendamento-visita.html">Agende sua Visita</a></li>
             <li><a href="rayat-senior-blog.html">Blog</a></li>
             <li><a href="rayat-senior-trabalhe-conosco.html">Trabalhe Conosco</a></li>
@@ -116,12 +115,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- Page Title -->
     <div class="page-title" style="position: relative;">
-  <img src="assets/img/img1.png" alt="Background" class="page-title-bg">
+      <img src="assets/img/img1.png" alt="Background" class="page-title-bg">
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Faça sua Cotação</h1>
+              <h1>Peça seu Orçamento Online</h1>
             </div>
           </div>
         </div>
@@ -130,7 +129,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container">
           <ol>
             <li><a href="index.html">Início</a></li>
-            <li class="current">Faça sua Cotação</li>
+            <li class="current">Orçamento Online</li>
           </ol>
         </div>
       </nav>
@@ -140,13 +139,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Graus de Dependência Section -->
     <section id="services" class="services section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Graus de Dependência</h2>
+        <h2>Selecione o Grau de Dependência</h2>
       </div>
       <div class="container">
         <div class="row gy-4">
           <!-- Grau I -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
+            <div class="service-item position-relative" data-dependencia="I">
               <div class="icon"><i class="fa-solid fa-user-nurse"></i></div>
               <h3>Grau de Dependência I</h3>
               <p>Pessoa idosa independente, não faz uso de apoios para locomoção, deambula de forma independente sem necessidade de auxílio dos colaboradores, realiza as refeições de forma autônoma bem como o banho de higiene.</p>
@@ -154,7 +153,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Grau II -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
+            <div class="service-item position-relative" data-dependencia="II">
               <div class="icon"><i class="fa-solid fa-user-nurse"></i></div>
               <h3>Grau de Dependência II</h3>
               <p>Pessoa idosa com dependência em até três atividades de autocuidado para a vida diária tais como, alimentação, mobilidade, higiene; sem comprometimento cognitivo ou com alteração cognitiva controlada.</p>
@@ -162,7 +161,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Grau III -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
+            <div class="service-item position-relative" data-dependencia="III">
               <div class="icon"><i class="fa-solid fa-user-nurse"></i></div>
               <h3>Grau de Dependência III</h3>
               <p>Pessoa idosa com dependência que requeira assistência em todas as atividades de autocuidado para a vida diária e/ou com comprometimento cognitivo.</p>
@@ -176,13 +175,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Acomodações (Rooms) Section -->
     <section id="rooms" class="services section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Acomodações</h2>
+        <h2>Selecione o Tipo de Acomodação</h2>
       </div>
       <div class="container">
         <div class="row gy-4">
           <!-- Quádruplo -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
+            <div class="service-item position-relative" data-quarto="Quádruplo">
               <div class="icon"><i class="fa-solid fa-bed"></i></div>
               <h3>Quádruplo</h3>
               <p>Quarto com 4 camas de solteiro.</p>
@@ -190,7 +189,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Triplo -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
+            <div class="service-item position-relative" data-quarto="Triplo">
               <div class="icon"><i class="fa-solid fa-bed"></i></div>
               <h3>Triplo</h3>
               <p>Quarto com 3 camas de solteiro.</p>
@@ -198,7 +197,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <!-- Duplo ou Casal -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
+            <div class="service-item position-relative" data-quarto="Duplo">
               <div class="icon"><i class="fa-solid fa-bed"></i></div>
               <h3>Duplo ou Casal</h3>
               <p>Quarto com 2 camas de solteiro ou 1 cama de casal.</p>
@@ -248,13 +247,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <!-- Awareness Checkbox -->
           <div class="mb-3 form-check">
-            <input 
-              class="form-check-input" 
-              type="checkbox" 
-              id="awareness" 
-              name="awareness" 
-              required
-            >
+            <input class="form-check-input" type="checkbox" id="awareness" name="awareness" required>
             <label class="form-check-label" for="awareness">
               Estou ciente de que o grau de dependência do residente será determinado pela equipe técnica da Rayat Residencial Sênior no momento da admissão.
             </label>
@@ -304,7 +297,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <h4>Conheça a Rayat</h4>
           <ul>
             <li><a href="rayat-senior-galeria-de-fotos.html">Galeria de Fotos</a></li>
-            <li><a href="rayat-senior-cotacao.html">Faça sua Cotação</a></li>
+            <li><a href="rayat-senior-cotacao.html">Orçamento Online</a></li>
             <li><a href="rayat-senior-agendamento-visita.html">Agende sua Visita</a></li>
             <li><a href="rayat-senior-trabalhe-conosco.html">Trabalhe Conosco</a></li>
             <li><a href="#"></a></li>
@@ -363,10 +356,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- 3) Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- 4) Your custom script for the quote form -->
+  <!-- 4) Custom Script to update form fields, highlight selections, and scroll to next sections -->
   <script>
-    $(document).ready(function() {
-      $('#quote-form').on('submit', function(e) {
+    $(document).ready(function () {
+      // Dependency card click
+      $('#services .service-item').on('click', function () {
+        var dep = $(this).data('dependencia');
+        if (dep) {
+          // Set the form field value
+          $('#dependencia').val(dep);
+          // Remove highlight from all dependency cards and add to clicked one
+          $('#services .service-item').removeClass('selected');
+          $(this).addClass('selected');
+          // Scroll to the Rooms section
+          $('html, body').animate({
+            scrollTop: $("#rooms").offset().top
+          }, 800);
+        }
+      });
+
+      // Room card click
+      $('#rooms .service-item').on('click', function () {
+        var room = $(this).data('quarto');
+        if (room) {
+          // Set the form field value
+          $('#quarto').val(room);
+          // Remove highlight from all room cards and add to clicked one
+          $('#rooms .service-item').removeClass('selected');
+          $(this).addClass('selected');
+          // Scroll to the Quote Form section
+          $('html, body').animate({
+            scrollTop: $(".booking-box").offset().top
+          }, 800);
+        }
+      });
+
+      // Form submission handler
+      $('#quote-form').on('submit', function (e) {
         e.preventDefault();
 
         // Gather form fields
@@ -383,18 +409,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         // Build the WhatsApp message
         const message = `Olá, meu nome é ${name}. ` +
-                        `Gostaria de uma cotação para grau de dependência ${dep} ` +
-                        `e quarto ${room}. Meu telefone é: ${phone}.`;
+          `Gostaria de uma cotação para grau de dependência ${dep} ` +
+          `e quarto ${room}. Meu telefone é: ${phone}.`;
 
         // Construct WhatsApp URL
         const whatsappUrl = `https://wa.me/5511953641740?text=${encodeURIComponent(message)}`;
-        
+
         // Open in a new tab
         window.open(whatsappUrl, '_blank');
       });
     });
   </script>
 </body>
+
 </html>
-
-
