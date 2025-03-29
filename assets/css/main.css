@@ -1129,6 +1129,13 @@ section,
   color: var(--contrast-color);
 }
 
+.cta-responsive {
+  width: 100%;    /* Let it fill the column */
+  height: auto;   /* Let the height adjust naturally */
+  padding: 30px;  /* Adjust padding as needed */
+  /* Optional: adjust font sizes or margins for responsiveness */
+}
+
 .btn-primary {
     background-color: #295a88 !important;
     color: white !important;
@@ -2721,6 +2728,13 @@ section,
   /* Adjust the title font size */
   .hero .icon-box2 .title {
     font-size: clamp(14px, 3vw, 24px) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-responsive {
+    padding: 20px;
+    font-size: 0.9em;
   }
 }
 
