@@ -30,7 +30,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Custom CSS for a centered box layout -->
+  <!-- Custom CSS -->
   <style>
     .booking-box {
       max-width: 600px;
@@ -41,25 +41,56 @@
       background-color: #fff;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+
+    /* Introductory Box with a gradient, border, and shadow using your palette */
+    .intro-box {
+      background: linear-gradient(135deg, #f9f7f7, #C8B889);
+      padding: 30px;
+      border: 6px solid #295a88;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(41, 90, 136, 0.2);
+      margin-bottom: 10px;
+      color: #295a88;
+    }
+
+    /* Reduce gap between sections */
+    .intro-section {
+      margin-bottom: 10px;
+    }
+
+    .apply.section {
+      margin-top: 10px;
+    }
   </style>
 </head>
 
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TDMZPLG6');</script>
+<!-- Google Tag Manager -->
+<script>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-TDMZPLG6');
+</script>
 <!-- End Google Tag Manager -->
-</head>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ED0XRVZE1R"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
   gtag('config', 'G-ED0XRVZE1R');
 </script>
 
@@ -79,7 +110,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a href="https://www.instagram.com/rayatsenior/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
-    </div><!-- End Top Bar -->
+    </div>
+    <!-- End Top Bar -->
 
     <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -109,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- Page Title -->
     <div class="page-title" style="position: relative;">
-  <img src="assets/img/img1.png" alt="Background" class="page-title-bg">
+      <img src="assets/img/img1.png" alt="Background" class="page-title-bg">
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
@@ -129,47 +161,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </nav>
     </div>
     <!-- End Page Title -->
-    
+
     <!-- Introductory Content -->
-     <section class="intro-section">
+    <section class="intro-section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center" data-aos="fade-up">
-              <h4>Na Rayat Sênior, valorizamos nossa equipe e estamos sempre abertos a receber novos talentos. Mesmo que no momento não tenhamos vagas abertas, queremos que você conheça nossa empresa e saiba como poderá fazer parte do nosso time no futuro.</h4>
+            <div class="intro-box">
+              <h4>
+                Na Rayat Sênior, valorizamos nossa equipe e estamos sempre abertos a receber novos talentos.
+                Mesmo que no momento não tenhamos vagas abertas, queremos que você conheça nossa empresa e saiba como poderá
+                fazer parte do nosso time no futuro.
+              </h4>
+            </div>
           </div>
-      </section>
+        </div>
+      </div>
+    </section>
+    <!-- End Introductory Content -->
 
     <!-- Apply Section -->
-<section id="apply" class="apply section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center" data-aos="fade-up">
-        <p><br><h1>Candidate-se</h1></p></br>
-        
-        <p>
-          <h5>Se você está interessado em trabalhar conosco, <u>clique no botão abaixo</u> para preencher o formulário.</h5>
-        </p>
-        <a href="https://forms.gle/FrqNDmydY33bvM1ZA" target="_blank" class="btn btn-primary" 
-           style="background-color: #295a88; color: #f9f7f7; padding: 12px 30px; border-radius: 50px; 
-                  text-decoration: none; font-weight: 600; font-size: 16px; margin: 15px 0; 
-                  transition: all 0.3s ease; border: 2px solid #295a88; text-transform: uppercase; 
-                  letter-spacing: 0.5px; box-shadow: 0 4px 8px rgba(41, 90, 136, 0.2);">
-          Acessar Formulário de Candidatura
-        </a>
-        <p>
-          <h5>Ou envie um <u>email</u> para:</h5>
-        </p>
-        <a href="mailto:vagas@rayatsenior.com"target="_blank" class="btn btn-primary" 
-           style="background-color: #295a88; color: #f9f7f7; padding: 12px 30px; border-radius: 50px; 
-                  text-decoration: none; font-weight: 600; font-size: 16px; margin: 15px 0; 
-                  transition: all 0.3s ease; border: 2px solid #295a88; text-transform: uppercase; 
-                  letter-spacing: 0.5px; box-shadow: 0 4px 8px rgba(41, 90, 136, 0.2);">
-          vagas@rayatsenior.com
-        </a>
+    <section id="apply" class="apply section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="fade-up">
+            <h1>Candidate-se</h1>
+            <h5><br>
+              Se você está interessado em trabalhar conosco, <u>clique no botão abaixo</u> para preencher o formulário.
+            </h5></br>
+            <a href="https://forms.gle/FrqNDmydY33bvM1ZA" target="_blank" class="btn btn-primary" 
+               style="background-color: #295a88; color: #f9f7f7; padding: 12px 30px; border-radius: 50px; 
+                      text-decoration: none; font-weight: 600; font-size: 16px; margin: 15px 0; 
+                      transition: all 0.3s ease; border: 2px solid #295a88; text-transform: uppercase; 
+                      letter-spacing: 0.5px; box-shadow: 0 4px 8px rgba(41, 90, 136, 0.2);">
+              Acessar Formulário de Candidatura
+            </a>
+            <h5>
+              Ou envie um <u>email</u> para:
+            </h5>
+            <a href="mailto:vagas@rayatsenior.com" target="_blank" class="btn btn-primary" 
+               style="background-color: #295a88; color: #f9f7f7; padding: 12px 30px; border-radius: 50px; 
+                      text-decoration: none; font-weight: 600; font-size: 16px; margin: 15px 0; 
+                      transition: all 0.3s ease; border: 2px solid #295a88; text-transform: uppercase; 
+                      letter-spacing: 0.5px; box-shadow: 0 4px 8px rgba(41, 90, 136, 0.2);">
+              vagas@rayatsenior.com
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
     <!-- End Apply Section -->
 
     <!-- Vagas Section -->
@@ -177,7 +217,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="container">
         <h1 class="section-title">Vagas Disponíveis</h1>
         <h4 class="text-center">Abril 2025</h4>
-        <p class="text-center"></p>
         <div class="vagas-container">
           <!-- Enfermeiro(a) Chefe -->
           <div class="vaga-box">
@@ -303,37 +342,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- 3) Main JS File -->
     <script src="assets/js/main.js"></script>
-
-    <!-- 4) Your custom script for the quote form -->
-    <script>
-      $(document).ready(function() {
-        $('#quote-form').on('submit', function(e) {
-          e.preventDefault();
-
-          // Gather form fields
-          const name = $('#name').val().trim();
-          const phone = $('#phone').val().trim();
-          const dep = $('#dependencia').val();
-          const room = $('#quarto').val();
-
-          // Check if everything is filled
-          if (!name || !phone || !dep || !room) {
-            alert('Por favor, preencha todos os campos.');
-            return;
-          }
-
-          // Build the WhatsApp message
-          const message = `Olá, meu nome é ${name}. ` +
-                          `Gostaria de uma cotação para grau de dependência ${dep} ` +
-                          `e quarto ${room}. Meu telefone é: ${phone}.`;
-
-          // Construct WhatsApp URL
-          const whatsappUrl = `https://wa.me/5511953641740?text=${encodeURIComponent(message)}`;
-
-          // Open in a new tab
-          window.open(whatsappUrl, '_blank');
-        });
-      });
-    </script>
+  </main>
+  <!-- End Main -->
 </body>
+
 </html>
