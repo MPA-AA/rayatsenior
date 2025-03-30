@@ -136,8 +136,34 @@
     </div>
     <!-- End Page Title -->
 
-    <!-- Graus de Dependência Section -->
-    <section id="services" class="services section">
+    <!-- Tipo de Vaga Section -->
+    <section id="tipo-vaga" class="services section cotacao-service">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Selecione o Tipo de Vaga</h2>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center gy-4">
+          <!-- Masculina -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" data-tipo-vaga="Masculina">
+              <div class="icon"><i class="fa-solid fa-mars"></i></div>
+              <h3>Masculina</h3>
+            </div>
+          </div>
+          <!-- Feminina -->
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative" data-tipo-vaga="Feminina">
+              <div class="icon"><i class="fa-solid fa-venus"></i></div>
+              <h3>Feminina</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Tipo de Vaga Section -->
+
+    <!-- Grau de Dependência Section -->
+    <section id="grau-dependencia" class="services section cotacao-service">
       <div class="container section-title" data-aos="fade-up">
         <h2>Selecione o Grau de Dependência</h2>
       </div>
@@ -147,35 +173,35 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative" data-dependencia="I">
               <div class="icon"><i class="fa-solid fa-user-nurse"></i></div>
-              <h3>Grau de Dependência I</h3>
-              <p>Pessoa idosa independente, não faz uso de apoios para locomoção, deambula de forma independente sem necessidade de auxílio dos colaboradores, realiza as refeições de forma autônoma bem como o banho de higiene.</p>
+              <h3>Grau I</h3>
+              <p>Se locomove de forma independente sem necessidade de auxílio. Realiza as refeições e banhos de higiene de forma autônoma.</p>
             </div>
           </div>
           <!-- Grau II -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative" data-dependencia="II">
               <div class="icon"><i class="fa-solid fa-user-nurse"></i></div>
-              <h3>Grau de Dependência II</h3>
-              <p>Pessoa idosa com dependência em até três atividades de autocuidado para a vida diária tais como, alimentação, mobilidade, higiene; sem comprometimento cognitivo ou com alteração cognitiva controlada.</p>
+              <h3>Grau II</h3>
+              <p>Dependência em até três atividades de autocuidado, tais como, alimentação, mobilidade e higiene. Sem comprometimento cognitivo.</p>
             </div>
           </div>
           <!-- Grau III -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative" data-dependencia="III">
               <div class="icon"><i class="fa-solid fa-user-nurse"></i></div>
-              <h3>Grau de Dependência III</h3>
-              <p>Pessoa idosa com dependência que requeira assistência em todas as atividades de autocuidado para a vida diária e/ou com comprometimento cognitivo.</p>
+              <h3>Grau III</h3>
+              <p>Requer assistência em todas as atividades de autocuidado para a vida diária e/ou com comprometimento cognitivo.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Graus de Dependência Section -->
+    <!-- End Grau de Dependência Section -->
 
-    <!-- Acomodações (Rooms) Section -->
-    <section id="rooms" class="services section">
+    <!-- Tipo de Quarto Section -->
+    <section id="rooms" class="services section cotacao-service">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Selecione o Tipo de Acomodação</h2>
+        <h2>Selecione o Tipo de Quarto</h2>
       </div>
       <div class="container">
         <div class="row gy-4">
@@ -184,7 +210,7 @@
             <div class="service-item position-relative" data-quarto="Quádruplo">
               <div class="icon"><i class="fa-solid fa-bed"></i></div>
               <h3>Quádruplo</h3>
-              <p>Quarto com 4 camas de solteiro.</p>
+              <p>4 camas de solteiro.</p>
             </div>
           </div>
           <!-- Triplo -->
@@ -192,7 +218,7 @@
             <div class="service-item position-relative" data-quarto="Triplo">
               <div class="icon"><i class="fa-solid fa-bed"></i></div>
               <h3>Triplo</h3>
-              <p>Quarto com 3 camas de solteiro.</p>
+              <p>3 camas de solteiro.</p>
             </div>
           </div>
           <!-- Duplo ou Casal -->
@@ -200,13 +226,13 @@
             <div class="service-item position-relative" data-quarto="Duplo">
               <div class="icon"><i class="fa-solid fa-bed"></i></div>
               <h3>Duplo ou Casal</h3>
-              <p>Quarto com 2 camas de solteiro ou 1 cama de casal.</p>
+              <p>2 camas de solteiro.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Rooms Section -->
+    <!-- End Tipo de Quarto Section -->
 
     <!-- Quote Box Section -->
     <section class="booking-box">
@@ -223,6 +249,15 @@
           <div class="mb-3">
             <label for="phone" class="form-label">Telefone/WhatsApp</label>
             <input type="tel" class="form-control" id="phone" required>
+          </div>
+          <!-- Tipo de Vaga -->
+          <div class="mb-3">
+            <label for="tipoVaga" class="form-label">Tipo de Vaga</label>
+            <select class="form-control" id="tipoVaga" required>
+              <option value="">Selecione</option>
+              <option value="Masculina">Masculina</option>
+              <option value="Feminina">Feminina</option>
+            </select>
           </div>
           <!-- Grau de Dependência -->
           <div class="mb-3">
@@ -359,23 +394,39 @@
   <!-- 4) Custom Script to update form fields, highlight selections, and scroll to next sections -->
   <script>
     $(document).ready(function () {
-      // Dependency card click
-      $('#services .service-item').on('click', function () {
+      // Tipo de Vaga card click
+      $('#tipo-vaga .service-item').on('click', function () {
+        var tipo = $(this).data('tipo-vaga');
+        if (tipo) {
+          // Set the form field value for tipo de vaga
+          $('#tipoVaga').val(tipo);
+          // Remove highlight from all Tipo de Vaga cards and add to clicked one
+          $('#tipo-vaga .service-item').removeClass('selected');
+          $(this).addClass('selected');
+          // Scroll to the Grau de Dependência section
+          $('html, body').animate({
+            scrollTop: $("#grau-dependencia").offset().top
+          }, 800);
+        }
+      });
+
+      // Grau de Dependência card click
+      $('#grau-dependencia .service-item').on('click', function () {
         var dep = $(this).data('dependencia');
         if (dep) {
           // Set the form field value
           $('#dependencia').val(dep);
           // Remove highlight from all dependency cards and add to clicked one
-          $('#services .service-item').removeClass('selected');
+          $('#grau-dependencia .service-item').removeClass('selected');
           $(this).addClass('selected');
-          // Scroll to the Rooms section
+          // Scroll to the Rooms (Tipo de Quarto) section
           $('html, body').animate({
             scrollTop: $("#rooms").offset().top
           }, 800);
         }
       });
 
-      // Room card click
+      // Tipo de Quarto card click
       $('#rooms .service-item').on('click', function () {
         var room = $(this).data('quarto');
         if (room) {
@@ -398,18 +449,19 @@
         // Gather form fields
         const name = $('#name').val().trim();
         const phone = $('#phone').val().trim();
+        const tipoVaga = $('#tipoVaga').val();
         const dep = $('#dependencia').val();
         const room = $('#quarto').val();
 
         // Check if everything is filled
-        if (!name || !phone || !dep || !room) {
+        if (!name || !phone || !tipoVaga || !dep || !room) {
           alert('Por favor, preencha todos os campos.');
           return;
         }
 
-        // Build the WhatsApp message
+        // Build the WhatsApp message including tipo de vaga
         const message = `Olá, meu nome é ${name}. ` +
-          `Gostaria de uma cotação para grau de dependência ${dep} ` +
+          `Gostaria de uma cotação para uma vaga ${tipoVaga}, com grau de dependência ${dep} ` +
           `e quarto ${room}. Meu telefone é: ${phone}.`;
 
         // Construct WhatsApp URL

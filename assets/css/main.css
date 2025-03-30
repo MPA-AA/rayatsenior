@@ -2840,6 +2840,30 @@ section,
   }
 }
 
+@media (max-width: 767px) {
+  .cotacao-service .col-lg-4,
+  .cotacao-service .col-md-6 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cotacao-service .service-item .icon {
+    margin-bottom: 10px; /* Reduce space below icon */
+  }
+  .cotacao-service .service-item .icon i {
+    font-size: 36px; /* Make icons smaller */
+  }
+  .cotacao-service .service-item h3 {
+    font-size: clamp(16px, 4vw, 20px) !important;
+    margin-bottom: 0.5rem; /* Adjust as needed */
+  }
+  .cotacao-service .service-item p {
+    font-size: clamp(12px, 3vw, 14px) !important;
+    margin-bottom: 0; /* Reduce gap between text lines */
+  }
+}
 
 /*--------------------------------------------------------------
 # Trabalhe Conosco Page
