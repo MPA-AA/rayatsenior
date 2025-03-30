@@ -2734,61 +2734,43 @@ section,
 } /* End of mobile nav media query */
 
 /*--------------------------------------------------------------
-# Icon Box Overrides (for screens up to 800px)
+# Icon Box Overrides (for screens up to 768px)
 --------------------------------------------------------------*/
 @media (max-width: 800px) {
-  /* Force grid columns for icon boxes to be 50% width (so two per row) */
-  .hero .col-xl-3,
-  .hero .col-md-3 {
-    flex: 0 0 50% !important;
-    max-width: 50% !important;
-    padding-left: 0 !important;   /* Remove extra gutter if needed */
+  /* Force icon boxes to stack by making each column 100% width */
+  .icon-boxes .col-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
     padding-right: 0 !important;
   }
-
-  /* Optional: Adjust the grid container gap if you're using a grid */
-  .icon-boxes .container {
-    gap: 5px !important; /* Reduce overall gap */
-  }
-
-  /* Reduce the vertical gap in the grid row */
-  .icon-boxes .row {
-    row-gap: 5px !important;
-  }
-
-  /* Make the icon boxes square and size them consistently */
-  .hero .icon-box2 {
-  width: clamp(100px, 35vw, 550px) !important;
-  height: clamp(100px, 35vw, 550px) !important;
-  padding: clamp(6px, 2vw, 6px) !important;
-  margin: 2px auto !important;
+  
+.icon-boxes .icon-box2 {
+  width: 90% !important;
+  height: auto !important;
+  padding: 20px !important;
+  margin: 5px auto !important;
   box-sizing: border-box;
-  display: flex;               /* Enable Flexbox */
-  flex-direction: column;      /* Stack children vertically */
-  justify-content: center;     /* Center vertically */
-  align-items: center;         /* Center horizontally */
-  text-align: center;          /* Center text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
-
-  /* Adjust the inner icon size */
-  .hero .icon-box2 .icon {
-    font-size: clamp(26px, 7vw, 32px) !important;
-    margin-bottom: clamp(5px, 2vw, 10px) !important;
+  
+  /* Adjust the icon size and spacing inside each box */
+  .icon-boxes .icon-box2 .icon {
+    font-size: 32px !important;
+    margin-bottom: 10px !important;
   }
-
-  /* Adjust the title font size */
-  .hero .icon-box2 .title {
-    font-size: clamp(14px, 3vw, 24px) !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .cta-responsive {
-    padding: 20px;
-    font-size: 0.9em;
+  
+  /* Adjust the title font size inside the icon boxes */
+  .icon-boxes .icon-box2 .title {
+    font-size: 18px !important;
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # ServiceBox Overrides (for screens up to 800px)
