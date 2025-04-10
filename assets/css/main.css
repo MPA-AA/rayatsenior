@@ -1385,6 +1385,20 @@ section,
   color: var(--accent-color);
 }
 
+.service-icon-container {
+  width: 80px;            /* Set desired width */
+  height: 80px;           /* Set desired height */
+  margin: 0 auto 10px;    /* Center container and add bottom margin for spacing */
+  overflow: hidden;       /* Ensures image doesn't overflow the container */
+}
+
+.service-icon-container img.service-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;    /* Keeps the aspect ratio without distortion */
+  display: block;
+}
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
